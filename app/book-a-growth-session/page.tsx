@@ -32,8 +32,22 @@ export default function BookAGrowthSessionPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      await fetch("https://hook.us2.make.com/rl9cieq1yog3yaf88rr65a1e2twre1ls", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+    
     setLoading(false);
     setSubmitted(true);
   };
