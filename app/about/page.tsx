@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CTAButton from "@/components/ui/CTAButton";
 import SectionHeader from "@/components/ui/SectionHeader";
+import Image from "next/image";
 import { CheckCircle, Target, Shield, BarChart3, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -65,19 +66,25 @@ export default function AboutPage() {
         <section className="py-16 lg:py-20 bg-surface-gray">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader eyebrow="The Team" title="Built by practitioners, not generalists" align="left" />
-            <div className="bg-white rounded-2xl border border-border p-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <div className="w-20 h-20 rounded-2xl bg-brand-blue-light flex items-center justify-center flex-shrink-0">
-                  <span className="font-heading font-bold text-3xl text-brand-blue">L</span>
+            <div className="bg-white rounded-2xl border border-border overflow-hidden">
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
+                  <Image 
+                    src="/images/lohith-profile.jpg" 
+                    alt="Lohith - Founder" 
+                    fill 
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
                 </div>
-                <div className="flex-1">
-                  <h3 className="font-heading font-bold text-xl text-text-primary mb-1">Lohith</h3>
-                  <p className="text-sm text-brand-blue font-semibold mb-4">Founder — Digital Marketing Expert & AI Automation Specialist</p>
-                  <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                    [PLACEHOLDER — Founder bio. Describe Lohith's background in digital marketing, experience in healthcare marketing, AI automation expertise, and what drove him to build AutovateNow specifically for healthcare clients.]
+                <div className="w-full md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
+                  <h3 className="font-heading font-bold text-3xl text-text-primary mb-2">Lohith</h3>
+                  <p className="text-base text-brand-blue font-semibold mb-6">Founder — Digital Marketing Expert & AI Automation Specialist</p>
+                  <p className="text-text-secondary text-base leading-relaxed mb-4">
+                    With years of experience in digital marketing and a deep specialization in the healthcare sector, I founded AutovateNow to bridge the gap between clinical excellence and modern patient acquisition.
                   </p>
-                  <p className="text-text-secondary text-sm leading-relaxed">
-                    AutovateNow is built on a conviction that healthcare practices deserve the same sophisticated, data-driven digital marketing that large corporates have — without the fragmentation of dealing with five different agencies for five different channels.
+                  <p className="text-text-secondary text-base leading-relaxed">
+                    AutovateNow is built on a conviction that healthcare practices deserve the same sophisticated, data-driven digital marketing that large corporates have — without the fragmentation of dealing with five different agencies for five different channels. We integrate SEO, personal branding, ads, and AI automation to deliver measurable, sustainable growth.
                   </p>
                 </div>
               </div>
