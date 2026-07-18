@@ -500,12 +500,42 @@ export default function HomePage() {
               <p className="text-sm font-semibold text-text-muted uppercase tracking-widest">What Clients Say</p>
             </div>
             <TestimonialCard
-              quote="[PLACEHOLDER — Real testimonial from Aura Cutisurg or another AutovateNow client. This section will display an authentic doctor quote once collected.]"
-              name="Dr. [Name]"
-              title="Specialist"
-              clinic="[Clinic Name], Bangalore"
+              quote="We've been working with Lohith for 45 days now, and he's truly an expert in marketing. From day one, he set up the right foundation, positioned our clinic apart from the crowd, and built a strong strategy focused on educating people and building authority. The results speak for themselves: 2.1+ million views and 10+ new patient visits. What I really value is that his agency handles everything end-to-end—SEO, content creation, performance marketing, and website development—so we didn’t have to worry about anything. He is transparent, humble, and genuinely committed. I highly recommend Lohith and AutovateNow to any doctor, clinic, or hospital owner looking to grow their digital presence."
+              name="Dr. S.R. Radhika"
+              title="Dermatologist"
+              clinic="Aura Cutisurg Clinic"
               variant="light"
             />
+          </div>
+        </section>
+
+        {/* ── FOUNDER ── */}
+        <section className="py-16 lg:py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader eyebrow="The Team" title="Built by practitioners, not generalists" />
+            <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
+                  <Image 
+                    src="/images/lohith-profile.jpg" 
+                    alt="Lohith - Founder" 
+                    fill 
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                </div>
+                <div className="w-full md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
+                  <h3 className="font-heading font-bold text-3xl text-text-primary mb-2">Lohith</h3>
+                  <p className="text-base text-brand-blue font-semibold mb-6">Founder — Digital Marketing Expert & AI Automation Specialist</p>
+                  <p className="text-text-secondary text-base leading-relaxed mb-4">
+                    With years of experience in digital marketing and a deep specialization in the healthcare sector, I founded AutovateNow to bridge the gap between clinical excellence and modern patient acquisition.
+                  </p>
+                  <p className="text-text-secondary text-base leading-relaxed">
+                    AutovateNow is built on a conviction that healthcare practices deserve the same sophisticated, data-driven digital marketing that large corporates have — without the fragmentation of dealing with five different agencies for five different channels. We integrate SEO, personal branding, ads, and AI automation to deliver measurable, sustainable growth.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
