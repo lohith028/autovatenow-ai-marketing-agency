@@ -334,48 +334,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── WHO WE HELP ── */}
-        <section id="who-we-help" className="py-20 lg:py-28 bg-surface-gray">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeader
-              eyebrow="Specialties We Serve"
-              title="Built for your specialty. Not adapted from a generic template."
-              subtitle="We understand the unique patient journey, regulatory context, and competitive landscape of each healthcare specialty we serve."
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {specialties.map((s) => (
-                <Link
-                  key={s.href}
-                  href={s.href}
-                  className="group bg-white rounded-2xl border border-border p-6 hover:border-brand-blue hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="w-14 h-14 rounded-2xl mb-5 transition-all duration-300 relative bg-gradient-to-br from-blue-400 via-brand-blue to-indigo-600 shadow-lg shadow-brand-blue/30 p-[1px]">
-                    <div className="w-full h-full bg-gradient-to-br from-white/40 to-white/5 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/50 text-white shadow-[inset_0_2px_10px_rgba(255,255,255,0.7)] group-hover:from-white/50 transition-colors">
-                      <span className="drop-shadow-md">
-                        {s.icon}
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="font-heading font-bold text-lg text-text-primary group-hover:text-brand-blue transition-colors mb-2">{s.name}</h3>
-                  <p className="text-sm text-text-secondary leading-relaxed mb-3">{s.desc}</p>
-                  {s.highlight && (
-                    <div className="inline-block px-3 py-1 bg-brand-gold-light text-brand-gold-dark text-xs font-semibold rounded-full mb-3">
-                      {s.highlight}
-                    </div>
-                  )}
-                  <div className="flex items-center gap-1.5 text-sm text-brand-blue font-semibold group-hover:gap-3 transition-all">
-                    Learn more <ArrowRight size={14} />
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center">
-              <CTAButton href="/who-we-help" variant="outline" id="view-all-specialties-btn">
-                View All Specialties
-              </CTAButton>
-            </div>
-          </div>
-        </section>
+
 
         {/* ── CASE STUDY HIGHLIGHT: AURA CUTISURG ── */}
         <section id="case-study-highlight" className="py-20 lg:py-28">
@@ -445,27 +404,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── WHY AUTOVATERNOW ── */}
-        <section id="differentiators" className="py-20 lg:py-28 bg-surface-gray">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeader
-              eyebrow="Why AutovateNow"
-              title="Healthcare marketing is different. We're built for it."
-              subtitle="Most digital agencies adapt general-market playbooks for healthcare. We start from healthcare first — the patient decision journey, YMYL content standards, and the trust that clinical authority requires."
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {differentiators.map((d) => (
-                <div key={d.title} className="bg-white rounded-2xl border border-border p-8 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-brand-blue-light flex items-center justify-center text-brand-blue mb-5">
-                    {d.icon}
-                  </div>
-                  <h3 className="font-heading font-bold text-lg text-text-primary mb-3">{d.title}</h3>
-                  <p className="text-sm text-text-secondary leading-relaxed">{d.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+
 
         {/* ── HOW IT WORKS ── */}
         <section id="process" className="py-20 lg:py-28">
