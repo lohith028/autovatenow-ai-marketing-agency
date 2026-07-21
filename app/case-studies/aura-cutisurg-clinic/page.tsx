@@ -13,7 +13,7 @@ const Instagram = ({ size, className }: { size: number, className?: string }) =>
 export const metadata: Metadata = {
   title: "Aura Cutisurg Clinic Case Study — 2.1M+ Views & 57 Leads | AutovateNow",
   description:
-    "How AutovateNow helped Aura Cutisurg Clinic, Bangalore generate 2.1M+ Instagram views, a viral 1M-view reel, and 57 patient leads with ₹2,004 in ad spend. Full healthcare marketing case study.",
+    "How AutovateNow helped Aura Cutisurg Clinic, Bangalore generate 2.1M+ Instagram views, 2 trending reels with 1 million views each, and 57 patient leads with ₹2,004 in ad spend. Full healthcare marketing case study.",
   alternates: { canonical: "https://autovaternow.com/case-studies/aura-cutisurg-clinic" },
 };
 
@@ -114,7 +114,7 @@ export default function AuraCasStudyPage() {
                   Aura Cutisurg Clinic Case Study
                 </h1>
                 <p className="text-blue-100 text-base leading-relaxed mb-8">
-                  How a Bangalore skin, hair, cosmetics, and surgery clinic built digital authority, generated 2,120,632+ Instagram views, and produced 57 messaging leads with just ₹2,004.49 in ad spend.
+                  How a Bangalore skin, hair, cosmetics, and surgery clinic built digital authority, generated 2,120,632+ Instagram views, and produced 57 messaging leads with just ₹2,004.49 in ad spend. 2 videos got in trending with 1 million views each.
                 </p>
                 {/* 3 Floating stat cards */}
                 <div className="flex flex-wrap gap-3 mb-8">
@@ -370,12 +370,12 @@ export default function AuraCasStudyPage() {
         {/* ── CONTENT & VIRAL REELS ── */}
         <section className="py-16 lg:py-20 bg-surface-gray">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeader eyebrow="Content Strategy" title="30+ pieces, 2.1M views, one viral reel approaching 1M" align="left" />
+            <SectionHeader eyebrow="Content Strategy" title="30+ pieces, 2.1M views, 2 trending videos with 1M views each" align="left" />
             <p className="text-text-secondary leading-relaxed mb-4">
               AutovateNow created short-form educational healthcare content designed to be simple, relatable, and highly shareable. Instead of generic clinic promotions, the strategy focused on doctor-led Reels around skincare, haircare, treatments, myths, and patient-interest topics.
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              The result: content that resonated far beyond the existing follower base — with 98.5% of views coming from non-followers, and a single reel reaching approximately 997K views.
+              The result: content that resonated far beyond the existing follower base — with 98.5% of views coming from non-followers, and 2 videos got in trending with 1 million views each.
             </p>
 
             {/* Content Insight Cards */}
@@ -512,7 +512,7 @@ export default function AuraCasStudyPage() {
                 { v: "30+", l: "Content pieces in 45 days" },
                 { v: "2,120,632+", l: "Instagram views" },
                 { v: "1.57M+", l: "Accounts reached" },
-                { v: "~1M", l: "Views on single viral reel" },
+                { v: "2", l: "Trending reels with 1M views each" },
                 { v: "57", l: "Patient messages generated" },
                 { v: "₹34.95", l: "Cost per patient conversation" },
               ].map((s) => (
@@ -545,21 +545,21 @@ export default function AuraCasStudyPage() {
           </div>
         </section>
 
-        {/* ── TESTIMONIAL PLACEHOLDER ── */}
+        {/* ── TESTIMONIAL ── */}
         <section className="py-12 bg-surface-gray">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-2xl border border-border p-8 relative overflow-hidden">
               <div className="absolute top-4 right-4 text-6xl text-brand-blue/10 font-heading font-bold">"</div>
               <div className="text-xs font-semibold text-brand-blue uppercase tracking-wider mb-4">Client Testimonial</div>
               <p className="text-text-secondary text-base italic leading-relaxed mb-6">
-                [PLACEHOLDER — Real testimonial quote from Dr. S.R. Radhika or Dr. Sunil Kumar, Aura Cutisurg Clinic. To be collected and added before site launch.]
+                "We've been working with Lohith for 45 days now, and he's truly an expert in marketing. From day one, he set up the right foundation, positioned our clinic apart from the crowd, and built a strong strategy focused on educating people and building authority. The results speak for themselves: 2.1+ million views and 10+ new patient visits. What I really value is that his agency handles everything end-to-end—SEO, content creation, performance marketing, and website development—so we didn’t have to worry about anything. He is transparent, humble, and genuinely committed. I highly recommend Lohith and AutovateNow to any doctor, clinic, or hospital owner looking to grow their digital presence."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-brand-blue-light flex items-center justify-center font-heading font-bold text-brand-blue">
-                  A
+                  SR
                 </div>
                 <div>
-                  <div className="font-heading font-semibold text-sm text-text-primary">Dr. [Name]</div>
+                  <div className="font-heading font-semibold text-sm text-text-primary">Dr. S.R. Radhika</div>
                   <div className="text-xs text-text-muted">Aura Cutisurg Clinic, Bengaluru</div>
                 </div>
               </div>

@@ -231,14 +231,13 @@ export default function HomePage() {
                 <div className="relative">
                   {/* Main image frame */}
                   <div className="bg-white backdrop-blur-sm border border-border rounded-2xl p-4 overflow-hidden shadow-card">
-                    <div className="bg-surface-gray rounded-xl aspect-[4/3] flex items-center justify-center relative">
-                      <Image
-                        src="/images/hero-section.jpeg"
-                        alt="AutovateNow Healthcare Marketing"
-                        fill
-                        className="object-cover rounded-xl"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        priority
+                    <div className="bg-surface-gray rounded-xl aspect-[4/3] flex items-center justify-center relative overflow-hidden">
+                      <video
+                        src="/videos/client-testimonial.mp4"
+                        poster="/images/hero-section.jpeg"
+                        className="object-cover w-full h-full rounded-xl"
+                        controls
+                        playsInline
                       />
 
                       {/* Floating stat cards */}
@@ -350,7 +349,7 @@ export default function HomePage() {
                     Aura Cutisurg Clinic
                   </h2>
                   <p className="text-blue-100 text-base leading-relaxed mb-8">
-                    A Bangalore skin, hair, cosmetics and surgery clinic. Zero meaningful digital presence. Within 45 days: 2.1 million Instagram views, a viral reel approaching 1M views, and 57 direct patient leads from ₹2,004 in ad spend.
+                    A Bangalore skin, hair, cosmetics and surgery clinic. Zero meaningful digital presence. Within 45 days: 2 videos got in trending with 1 million views each, and 57 direct patient leads from ₹2,004 in ad spend.
                   </p>
                   {/* Key Stats */}
                   <div className="grid grid-cols-3 gap-4 mb-8">
@@ -383,7 +382,7 @@ export default function HomePage() {
                     </div>
                     <div className="relative rounded-xl overflow-hidden aspect-square bg-white/10">
                       <Image
-                        src="/images/case-studies/reel-1.jpg"
+                        src="/images/case-studies/reel-2.png"
                         alt="Aura Cutisurg viral reel screenshot"
                         fill
                         className="object-cover"
