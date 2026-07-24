@@ -447,30 +447,58 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── FOUNDER ── */}
+        {/* ── TEAM ── */}
         <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader eyebrow="The Team" title="Built by practitioners, not generalists" />
-            <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
-                  <Image 
-                    src="/images/lohith-profile.jpg" 
-                    alt="Lohith - Founder" 
-                    fill 
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 40vw"
-                  />
+            <div className="flex flex-col gap-8">
+              {/* Founder */}
+              <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
+                    <Image 
+                      src="/images/lohith-profile.jpg" 
+                      alt="Lohith - Founder" 
+                      fill 
+                      className="object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                    />
+                  </div>
+                  <div className="w-full md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
+                    <h3 className="font-heading font-bold text-3xl text-text-primary mb-2">Lohith</h3>
+                    <p className="text-base text-brand-blue font-semibold mb-6">Founder — Digital Marketing Expert & AI Automation Specialist</p>
+                    <p className="text-text-secondary text-base leading-relaxed mb-4">
+                      With years of experience in digital marketing and a deep specialization in the healthcare sector, I founded AutovateNow to bridge the gap between clinical excellence and modern patient acquisition.
+                    </p>
+                    <p className="text-text-secondary text-base leading-relaxed">
+                      AutovateNow is built on a conviction that healthcare practices deserve the same sophisticated, data-driven digital marketing that large corporates have — without the fragmentation of dealing with five different agencies for five different channels. We integrate SEO, personal branding, ads, and AI automation to deliver measurable, sustainable growth.
+                    </p>
+                  </div>
                 </div>
-                <div className="w-full md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
-                  <h3 className="font-heading font-bold text-3xl text-text-primary mb-2">Lohith</h3>
-                  <p className="text-base text-brand-blue font-semibold mb-6">Founder — Digital Marketing Expert & AI Automation Specialist</p>
-                  <p className="text-text-secondary text-base leading-relaxed mb-4">
-                    With years of experience in digital marketing and a deep specialization in the healthcare sector, I founded AutovateNow to bridge the gap between clinical excellence and modern patient acquisition.
-                  </p>
-                  <p className="text-text-secondary text-base leading-relaxed">
-                    AutovateNow is built on a conviction that healthcare practices deserve the same sophisticated, data-driven digital marketing that large corporates have — without the fragmentation of dealing with five different agencies for five different channels. We integrate SEO, personal branding, ads, and AI automation to deliver measurable, sustainable growth.
-                  </p>
+              </div>
+
+              {/* Akshatha Patil */}
+              <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
+                <div className="flex flex-col md:flex-row-reverse">
+                  <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
+                    <Image 
+                      src="/images/akshatha-profile.jpg" 
+                      alt="Akshatha Patil - Social Media Manager & Content Strategist" 
+                      fill 
+                      className="object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                    />
+                  </div>
+                  <div className="w-full md:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
+                    <h3 className="font-heading font-bold text-3xl text-text-primary mb-2">Akshatha Patil</h3>
+                    <p className="text-base text-brand-blue font-semibold mb-6">Social Media Manager & Content Strategist</p>
+                    <p className="text-text-secondary text-base leading-relaxed mb-4">
+                      As a Social Media Manager and Content Strategist, I specialize in translating complex medical expertise into engaging, accessible, and highly impactful digital content. My focus is on building authentic personal brands for healthcare professionals that foster patient trust and drive real practice growth.
+                    </p>
+                    <p className="text-text-secondary text-base leading-relaxed">
+                      By combining data-driven audience insights with creative storytelling, I engineer content ecosystems—from short-form videos to comprehensive educational campaigns. I manage end-to-end social media presence, turning passive scrollers into loyal patients while maintaining the utmost professional standards required in healthcare.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
