@@ -482,7 +482,7 @@ export default function HomePage() {
                 <div className="flex flex-col md:flex-row-reverse">
                   <div className="w-full md:w-2/5 relative h-80 md:h-auto min-h-[350px]">
                     <Image 
-                      src="/images/akshatha-profile.jpg" 
+                      src="/images/akshatha-photo.png" 
                       alt="Akshatha Patil - Social Media Manager & Content Strategist" 
                       fill 
                       className="object-cover object-top"
